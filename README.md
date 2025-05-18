@@ -1,4 +1,5 @@
 **✅ Experiment No:** 1  
+
 **Experiment Name:** Design a simple webpage using only HTML tags for Computer Science and Engineering Department of your institute or college where &lt;head&gt;, &lt;title&gt;, &lt;body&gt; and divisional tags like &lt;div&gt;, &lt;span&gt;, &lt;table&gt; should be used as needed. (Using HTML5 is recommended).
 
 **Source Code:**  
@@ -37,7 +38,8 @@
 </html>
 ```
 
-**✅ Experiment No:** 2
+**✅ Experiment No:** 2  
+
 **Experiment Name:** Using text links design a simple website to navigate between different pages (minimum two pages and one page must contain an image link and another page contain 2x3 table).
 
 **Source Code:**  
@@ -85,7 +87,8 @@
 </html>
 ```
 
-**✅ Experiment No:** 3
+**✅ Experiment No:** 3  
+
 **Experiment Name:** Design a simple website using CSS containing formatted text, forms, tables and link styles. (Must use three ways of inserting CSS external, internal and inline style).
 
 **Source Code:**  
@@ -124,7 +127,8 @@ form {
 }
 ```
 
-**✅ Experiment No:** 4
+**✅ Experiment No:** 4  
+
 **Experiment Name:** Using CSS menu, design a website to navigate between different pages. (Minimum three pages and each page must contain heading, paragraph, text formatting tags and mouse over links to back homepage).
 
 **Source Code:**  
@@ -230,7 +234,8 @@ form {
 }
 ```
 
-**✅ Experiment No:** 5
+**✅ Experiment No:** 5  
+
 **Experiment Name:** Design a form that contains "Text Fields", "Text Area", "Check boxes", "Multiple Checkboxes", "Radio Buttons", "List Boxes", "Password Fields", "Submit button", "Reset button" and store the value of this form into MySQL database and show the stored information into another page using PHP program.
 
 **Source Code:**  
@@ -329,7 +334,8 @@ echo "Password: " . $row['password'] . "<br>";
 ?>
 ```
 
-**✅ Experiment No:** 6
+**✅ Experiment No:** 6  
+
 **Experiment Name:** Design a webpage that collects student information and subject marks and stores the information and marks to MySQL database. Show the results in grading (GPA) system to another page using PHP program.
 
 **Source Code:**  
@@ -409,7 +415,8 @@ if ($row = mysqli_fetch_assoc($result)) {
 ?>
 ```
 
-**✅ Experiment No:** 7
+**✅ Experiment No:** 7  
+
 **Experiment Name:** Design a page where user can input his/her personal information like name, address, email, gender, mobile number, etc. and perform common input validation using JavaScript like valid email, mobile number should be 11 digits, mandatory field check etc.
 
 **Source Code:**  
