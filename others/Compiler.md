@@ -14,7 +14,7 @@ CHARACTER    [a-zA-Z]
 UNDERSCORE   [_]
 IDENTIFIER   (({CHARACTER}|{UNDERSCORE})+({CHARACTER}|{DIGIT}|{UNDERSCORE})*)
 BLANK        [' ', '\t', '\n']
-AL           (.+)
+AL           (.)+
 
 %%
 
@@ -50,7 +50,7 @@ int yywrap(void)
 DIGIT   [0-9]
 NUMBER  ([+-])?(({DIGIT})+)?(\.({DIGIT})+)?([Ee]([+-])?({DIGIT})+)?
 BLANK   [' ', '\t', '\n']
-AL      (.+)
+AL      (.)+
 
 %%
 
