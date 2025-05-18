@@ -284,7 +284,7 @@ form {
 **Filename: submit.php**
 ```php
 <?php
-$conn = mysqli_connect("localhost", "root", "", "testdb");
+$conn = mysqli_connect("localhost", "root", "", "usersdb");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -316,7 +316,7 @@ mysqli_close($conn);
 **Filename: view.php**
 ```php
 <?php
-$conn = mysqli_connect("localhost", "root", "", "testdb");
+$conn = mysqli_connect("localhost", "root", "", "usersdb");
 
 $id = $_GET['id'];
 
@@ -363,7 +363,7 @@ echo "Password: " . $row['password'] . "<br>";
 **Filename: submit.php**
 ```php
 <?php
-$conn = mysqli_connect("localhost", "root", "", "testdb");
+$conn = mysqli_connect("localhost", "root", "", "resultdb");
 
 $name = $_POST['name'];
 $bangla = $_POST['bangla'];
@@ -386,7 +386,7 @@ if (mysqli_query($conn, $sql)) {
 **Filename: view.php**
 ```php
 <?php
-$conn = mysqli_connect("localhost", "root", "", "testdb");
+$conn = mysqli_connect("localhost", "root", "", "resultdb");
 
 $id = $_GET['id'];
 
