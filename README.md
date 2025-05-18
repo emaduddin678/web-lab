@@ -101,7 +101,12 @@
     <title>CSS Example</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        h1 { color: darkgreen; }
+        a {
+            color: darkred;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -111,6 +116,27 @@
         <label>Name: </label><input type="text"><br>
         <label>Email: </label><input type="email"><br>
     </form>
+
+    <h2>User Table</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tanvir</td>
+            <td>tanvir@example.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ayesha</td>
+            <td>ayesha@example.com</td>
+        </tr>
+    </table>
+
+    <p>Visit <a href="https://www.example.com" target="_blank">Example Website</a> for more info.</p>
 </body>
 </html>
 ```
