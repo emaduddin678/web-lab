@@ -1,6 +1,6 @@
-**✅ Experiment No:** 2  
+**✅ Problem No:** 2  
 
-**Experiment Name:** Write a simple lex specification to recognize the identifier.
+**Problem Name:** Write a simple lex specification to recognize the identifier.
 
 **Source Code:**  
 
@@ -36,9 +36,9 @@ int yywrap(void)
 }
 ```
 
-**✅ Experiment No:** 3  
+**✅ Problem No:** 3  
 
-**Experiment Name:** Write a simple lex specification to recognize real numbers.
+**Problem Name:** Write a simple lex specification to recognize real numbers.
 
 **Source Code:**  
 
