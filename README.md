@@ -441,7 +441,7 @@ if ($row = mysqli_fetch_assoc($result)) {
             return false;
         }
 
-        let emailPattern = /^\S+@\S+\.\S+$/;
+        let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
         if (!emailPattern.test(email)) {
             alert("Please enter a valid email address.");
             return false;
