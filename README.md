@@ -1,5 +1,5 @@
 ✅ Experiment No: 1
-Experiment Name: Design a simple webpage using only HTML tags for Computer Science and Engineering Department of your institute or college where <head>, <title>, <body> and divisional tags like <div>, <span>, <table> should be used as needed. (Using HTML5 is recommended).
+Experiment Name: Design a simple webpage using only HTML tags for Computer Science and Engineering Department of your institute or college where &lt;head&gt;, &lt;title&gt;, &lt;body&gt; and divisional tags like &lt;div&gt;, &lt;span&gt;, &lt;table&gt; should be used as needed. (Using HTML5 is recommended).
 
 **Filename: index.html**
 ```html
