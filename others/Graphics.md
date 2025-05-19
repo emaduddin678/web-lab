@@ -64,6 +64,76 @@ int main(){
 }
 ```
 
+**✅ Problem No:** 4  
+
+**Problem Name:** Write a program to implement Midpoint circle drawing algorithm.
+
+**Source Code:**  
+
+```cpp
+#include <windows.h>
+#include <GL/glut.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void drawPoint(int x, int y) {
+    glPointSize(2.0);
+    glBegin(GL_POINTS);
+        glColor3f(1.0, 1.0, 0.0);
+        glVertex2f(x, y);
+    glEnd();
+}
+
+void drawCirclePoint(int xc, int yc, int x, int y) {
+    drawPoint(xc + x, yc + y);
+    drawPoint(xc - x, yc + y);
+    drawPoint(xc + x, yc - y);
+    drawPoint(xc - x, yc - y);
+    drawPoint(xc + y, yc + x);
+    drawPoint(xc - y, yc + x);
+    drawPoint(xc + y, yc - x);
+    drawPoint(xc - y, yc - x);
+}
+
+void drawCircle(int xc, int yc, int r) {
+    int x = 0, y = r;
+    int p = 1 - r;
+    drawCirclePoint(xc, yc, x, y);
+
+    while (x < y) {
+        x++;
+        if (p <= 0) {
+            p = p + (2 * x) + 1;
+        } else {
+            y--;
+            p = p + (2 * x) + 1 - (2 * y);
+        }
+        drawCirclePoint(xc, yc, x, y);
+    }
+}
+
+static void display(void) {
+    glPushMatrix();
+    drawCircle(2, 2, 10);
+    glPopMatrix();
+    glutSwapBuffers();
+}
+
+int main(){
+    glutInitDisplayMode(GLUT_RGB|GLUT_DOUBLE|GLUT_DEPTH);
+    glutInitWindowSize(1000, 1000);
+    glutInitWindowPosition(100, 100);
+    glutCreateWindow("Midpoint Circle");
+    glClearColor(0,0,0,0);
+    glOrtho(-200, 200, -200, 200, -1, 1);
+
+    glutDisplayFunc(display);
+    glutMainLoop();
+
+    return EXIT_SUCCESS;
+}
+```
+
 **✅ Problem No:** 11  
 
 **Problem Name:** Write a program to implement Cohen-Sutherland line clipping algorithm.
