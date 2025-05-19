@@ -57,7 +57,7 @@
 </html>
 ```
 
-**Filename: iamge.html**
+**Filename: image.html**
 ```html
 <!DOCTYPE html>
 <html>
